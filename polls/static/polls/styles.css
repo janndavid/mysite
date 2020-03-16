@@ -1,0 +1,72 @@
+body {
+  color: black;
+  background-color: Ivory;
+}
+
+p {
+    color: brown;
+}
+
+#p01 {
+    color: gray;
+}
+
+ul {
+  color: gray;
+}
+
+address {
+  color: gray;
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px;
+  width: 205px;
+}
+
+<style>
+  a {
+    color: gray;
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>
+
+<style>
+  a {
+    color: gray;
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+</style>

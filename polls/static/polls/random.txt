@@ -1,0 +1,11 @@
+body {
+    background: white url("images/background.gif") no-repeat;
+}
+
+body {
+    background: white url("images/baggrund2.jpg")
+no-repeat;
+}
+
+man kan linke til andre hjemmesiders styles osv:
+ <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">

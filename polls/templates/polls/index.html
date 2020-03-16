@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
 
 <!-- Skal have oversættelser på dansk, engelsk, færøsk og fransk -->
 
   <head>
-    <title> JannTheMan's website and portfolio </title>
+    <title> JannTheMan's site </title>
   </head>
 
-  <body style="background-color:Ivory;">
+  <body>
 
     <!-- Home page content -->
     <!-- Mangler: stil og shabang -->
@@ -15,7 +17,7 @@
       <h1>
         <b> Jann Jacobsen </b>
       </h1>
-        <p style="color:grey">
+        <p id="p01">
           Some text displaying the homepage with cool pictures consisting of<br>
           one paragraph though it has been split up into different sections<br>
         </p>
@@ -28,10 +30,10 @@
       <h1>
         <b> Projects </b>
       </h1>
-        <p>
+        <p id="p01">
           <!-- Projekter, dog skal mit RoR linkes til, når man hover
                over et projekt skal der komme et forklarende tool tip -->
-          <ul style="color:grey">
+          <ul>
             <li>Ruby on rails project</li>
             <li>Game made with unity</li>
             <li>Game made from own game engine</li>
@@ -46,23 +48,26 @@
       <h1>
         <b> About </b>
       </h1>
-      <p style="color:grey">
+      <p id="p01">
         <q>Something basic about me</q> <br>
       </p>
+      <button type="button">Click Me!</button>
 
       <!-- Kontaktinfo: Der skal indsættes ikoner og links til sociale medier
            og tooltips når man hover henover noget information eller et ikon -->
       <font size="2">
-        <address style="color:grey">
+        <address>
           Jann 'JannTheMan' Jacobsen <br>
           5000 Odense C <br>
           Tlf. +45 20 85 40 42 <br>
           E-mail: jann-david77@live.dk <br>
-          My RoR site: <b>link til ruby on rails hjemmeside </b> <br>
-          *linkedin icon* *instagram icon* *mail icon* *github icon*
+          <a href="#">My ruby projects</a> <br>
+          <a href="#">linkedin</a>
+          <a href="#">instagram</a>
+          <a href="#">mail</a>
+          <a href="#">github</a>
         </address>
       </font>
-      <hr>
     </div>
 
   </body>
