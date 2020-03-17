@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html>
-  {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+{% load static %}
 
+<!-- LINKS -->
+<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- -->
 <!-- Skal have oversættelser på dansk, engelsk, færøsk og fransk -->
+<!-- -->
+<!-- -->
+<!-- -->
+<head>
+<title> JannTheMan's site </title>
+</head>
 
-  <head>
-    <title> JannTheMan's site </title>
-  </head>
+<body>
 
-  <body>
+<!-- NAV BAR START -->
+<div class="topnav" id="myTopnav">
+  <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="#news">Projects</a>
+  <a href="#about">About</a>
+</div>
+<!-- NAV BAR END -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- HOME PAGE START -->
+<div id="home">
+  <h1>
+    <b> Jann Jacobsen </b>
+  </h1>
+  <p id="p01">
+  Some text displaying the homepage with cool pictures consisting of<br>
+  one paragraph though it has been split up into different sections<br>
+  </p>
+  <hr>
+</div>
+<!-- HOME PAGE END -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- PROJECT PAGE START -->
+<div id="projects">
+  <h1>
+    <b> Projects </b>
+  </h1>
+  <p id="p01">
+    <ul>
+      <li>Ruby on rails project</li>
+      <li>Game made with unity</li>
+      <li>Game made from own game engine</li>
+    </ul>
+  </p>
+  <hr>
+</div>
+<!-- PROJECT PAGE END -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- ABOUT PAGE START -->
+<div id="about">
+  <h1>
+    <b> About </b>
+  </h1>
+  <p id="p01">
+    <q>Something basic about me</q> <br>
+  </p>
+  <button type="button">Click Me!</button>
 
-    <!-- Home page content -->
-    <!-- Mangler: stil og shabang -->
-    <div>
-      <h1>
-        <b> Jann Jacobsen </b>
-      </h1>
-        <p id="p01">
-          Some text displaying the homepage with cool pictures consisting of<br>
-          one paragraph though it has been split up into different sections<br>
-        </p>
-      <hr>
-    </div>
-
-    <!-- Projects content -->
-    <!-- Mangler: link til ny hjemmeside og projekter -->
-    <div>
-      <h1>
-        <b> Projects </b>
-      </h1>
-        <p id="p01">
-          <!-- Projekter, dog skal mit RoR linkes til, når man hover
-               over et projekt skal der komme et forklarende tool tip -->
-          <ul>
-            <li>Ruby on rails project</li>
-            <li>Game made with unity</li>
-            <li>Game made from own game engine</li>
-          </ul>
-        </p>
-      <hr>
-    </div>
-
-    <!-- About me content -->
-    <!-- Mangler: stil og shabang og rigtig information -->
-    <div>
-      <h1>
-        <b> About </b>
-      </h1>
-      <p id="p01">
-        <q>Something basic about me</q> <br>
-      </p>
-      <button type="button">Click Me!</button>
-
-      <!-- Kontaktinfo: Der skal indsættes ikoner og links til sociale medier
-           og tooltips når man hover henover noget information eller et ikon -->
-      <font size="2">
-        <address>
-          Jann 'JannTheMan' Jacobsen <br>
-          5000 Odense C <br>
-          Tlf. +45 20 85 40 42 <br>
-          E-mail: jann-david77@live.dk <br>
-          <a href="#">My ruby projects</a> <br>
-          <a href="#">linkedin</a>
-          <a href="#">instagram</a>
-          <a href="#">mail</a>
-          <a href="#">github</a>
-        </address>
-      </font>
-    </div>
-
-  </body>
-
+  <!-- Kontaktinfo: Der skal indsættes ikoner og links til sociale medier
+  og tooltips når man hover henover noget information eller et ikon -->
+  <font size="2">
+    <address>
+      Jann 'JannTheMan' Jacobsen <br>
+      5000 Odense C <br>
+      Tlf. +45 20 85 40 42 <br>
+      E-mail: jann-david77@live.dk <br>
+      <a href="#">See my ruby projects</a> <br>
+      <a href="#">linkedin</a>
+      <a href="#">instagram</a>
+      <a href="#">mail</a>
+      <a href="#">github</a>
+    </address>
+  </font>
+</div>
+<!-- ABOUT PAGE START -->
+<!-- -->
+<!-- -->
+<!-- -->
+</body>
 </html>

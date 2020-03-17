@@ -23,50 +23,38 @@ address {
   width: 205px;
 }
 
-<style>
+.topnav {
+  background-color: #bfd0d6;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
   a {
     color: gray;
   }
 
   a:link {
-    color: green;
+    color: black;
     background-color: transparent;
     text-decoration: none;
   }
 
   a:hover {
-    color: red;
+    color: black;
     background-color: transparent;
     text-decoration: underline;
   }
 
   a:active {
-    color: yellow;
+    color: black;
     background-color: transparent;
     text-decoration: underline;
   }
-</style>
-
-<style>
-  a {
-    color: gray;
-  }
-
-  a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-</style>
