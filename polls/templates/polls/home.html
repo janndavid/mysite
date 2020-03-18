@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html>
-{% load static %}
+{% extends "polls/base.html" %}
+{% block content %}
 
-<!-- LINKS -->
-<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- -->
-<!-- Skal have oversættelser på dansk, engelsk, færøsk og fransk -->
-<!-- -->
-<!-- -->
-<!-- -->
-<head>
-<title> JannTheMan's site </title>
-</head>
-
-<body>
-
-<!-- NAV BAR START -->
-<div class="topnav" id="myTopnav">
-  <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
-  <a href="#news">Projects</a>
-  <a href="#about">About</a>
-</div>
-<!-- NAV BAR END -->
-<!-- -->
-<!-- -->
-<!-- -->
 <!-- HOME PAGE START -->
 <div id="home">
   <h1>
@@ -67,7 +42,6 @@
   <p id="p01">
     <q>Something basic about me</q> <br>
   </p>
-  <button type="button">Click Me!</button>
 
   <!-- Kontaktinfo: Der skal indsættes ikoner og links til sociale medier
   og tooltips når man hover henover noget information eller et ikon -->
@@ -86,8 +60,5 @@
   </font>
 </div>
 <!-- ABOUT PAGE END -->
-<!-- -->
-<!-- -->
-<!-- -->
-</body>
-</html>
+
+{% endblock content %}

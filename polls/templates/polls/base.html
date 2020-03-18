@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Loads static files and links -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- BOOTSTRAP 4 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- HEAD START -->
+<head>
+  {% if title %}
+    <title> {{ title }} </title>
+  {% else %}
+    <title> JannTheMan's site </title>
+  {% endif %}
+</head>
+<!-- HEAD END -->
+
+<body>
+
+<!-- TOP NAV START -->
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="#news">Projects</a>
+    <a href="#about">About</a>
+  </div>
+<!-- TOP NAV END -->
+
+  {% block content %} {% endblock %}
+
+<!-- BOTTOM NAV START -->
+<div class="botnav" id="myBotnav">
+  <ul>
+    <li> <a class="active" href="#home">"indsæt tekst"</a> </li>
+    <li> <a href="#news">"indsæt tekst"</a> </li>
+    <li> <a href="#about">"indsæt tekst"</a> </li>
+  </ul>
+
+<!--
+  <a class="active" href="#home">"indsæt tekst"</a>
+  <a href="#news">"indsæt tekst"</a>
+  <a href="#about">"indsæt tekst"</a>
+-->
+</div>
+<!-- BOTTOM NAV END -->
+
+</body>
+</html>

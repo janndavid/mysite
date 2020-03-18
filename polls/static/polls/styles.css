@@ -1,6 +1,125 @@
+/*
+* Top nav
+* Bottom nav
+* Etc
+* Etc
+*/
+
+/* Start of bottom nav */
+.botnav {
+  background-color: #ccffff;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.botnav div {
+  vertical-align: middle;
+}
+
+.botnav a {
+  color: #000000;
+  display: table-row;
+  vertical-align: middle;
+  font-family: Code2;
+  text-decoration: none;
+  color: #000;
+  padding: 11px;
+  clear: both;
+}
+
+.botnav a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.botnav a:hover {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.botnav a:active {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* End of bottom nav */
+
+/*****************************************************************************/
+
+/* Start of top nav */
+.topnav {
+  background-color: #ccffff;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:link {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.topnav a:active {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* End of top nav */
+
+/*****************************************************************************/
+
+a {
+  color: gray;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*****************************************************************************/
+
+ul {
+  vertical-align: middle;
+  text-align: center;
+}
+
 body {
   color: black;
-  background-color: Ivory;
+  background-color: #ffffff;
 }
 
 p {
@@ -23,38 +142,4 @@ address {
   width: 205px;
 }
 
-.topnav {
-  background-color: #bfd0d6;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-  a {
-    color: gray;
-  }
-
-  a:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-
-  a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+/*****************************************************************************/
