@@ -5,14 +5,25 @@ html. body {
 
 .navbar {
   background-color: #264d73;
+  outline: none;
+}
+
+.navbar-nav {
+  float: right!important;
+  outline: none;
 }
 
 .navbar-brand {
-
+  outline: none;
 }
 
 .navbar-default .navbar-nav li a {
   color: #D5D5D5;
+  outline: none;
+}
+
+.navbar-toggler {
+  outline: none;
 }
 
 #home {
@@ -62,7 +73,7 @@ html. body {
 }
 
 #pibg {
-  background-color: #264d73;
+  background-color: #aaadb3;
   display: table;
   height: 200px;
   width: 100%;
@@ -72,6 +83,11 @@ html. body {
 .btn-secondary {
   font-size: 15px;
   background-color: black;
+  outline: none;
+}
+
+.btn {
+  outline: none;
 }
 
 a:hover {
@@ -80,6 +96,7 @@ a:hover {
 
 a:link {
   color: black;
+  outline: none;
 }
 
 a:visited {
