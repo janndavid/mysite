@@ -13,7 +13,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 
   {% if title %}
@@ -27,30 +27,33 @@
 <body>
 
 <!-- Nav start -->
-<header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
-          <a class="navbar-brand mr-4" href="#">JannTheMan</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <!-- Nav left skal udfyldes senere -->
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="#"></a>
-              <a class="nav-item nav-link" href="#"></a>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light">
 
-            <!-- Nav right -->
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">Home</a>
-              <a class="nav-item nav-link" href="#">Projects</a>
-              <a class="nav-item nav-link" href="#">About</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+<div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">JannTheMan</a>
+    </div>
+
+    <button class="navbar-toggler" type="button"
+    data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+</div>
+</nav>
 <!-- Nav end -->
 
 
@@ -59,81 +62,58 @@
 
 
 <!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
+<footer class="temp">
 
-  <!-- Footer Text -->
-  <div class="container-fluid text-center text-md-left">
+<div class="padding">
 
-    <!-- Grid row -->
-    <div class="row">
+<div class="container">
 
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+<div class="row">
 
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?</p>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
+  <!-- ved col-lg-3 betyder det at vi viser indhold på 12/3=4 kolonner
+  af skærmen da bootstrap 4 kun har 12 kolonner. col-sm-6 betyder
+  altså at vi viser det i 2 kolonner, og col-cs-12 er kun en kolonne -->
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h4>Contact</h4>
+    <p>
+      <address>
+        Jann 'JannTheMan' Jacobsen <br>
+        5000 Odense C <br>
+        Tlf. +45 20 85 40 42 <br>
+        E-mail: jann-david77@live.dk <br>
+        <a href="#">See my ruby projects</a> <br>
+        <a href="#" class="fa fa-facebook">linkedin</a>
+        <a href="#" class="fa fa-twitter">instagram</a>
+        <a href="#">mail</a>
+        <a href="#">github</a>
+      </address>
+    </p>
   </div>
-  <!-- Footer Text -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h4>Built with Django</h4>
+    <p>"Django is a high-level Python Web framework that encourages rapid
+       development and clean, pragmatic design. Built by experienced developers,
+       it takes care of much of the hassle of Web development."</p>
   </div>
-  <!-- Copyright -->
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h4>Bootstrap 4</h4>
+    <p>"Build responsive, mobile-first projects on the web with the world’s
+        most popular front-end component library. Bootstrap is an open source
+        toolkit for developing with HTML, CSS, and JS. Quickly prototype your
+        ideas or build"</p>
+  </div>
+
+</div>
+
+</div>
+
+</div>
 
 </footer>
 <!-- Footer -->
 
-
-<!-- Footer start
-<footer class="site-footer">
-  <div class="container">
-
-    <div class="col-lg-11 col-centered">
-      <p>Contact</p>
-        <font size="2">
-          <address>
-            Jann 'JannTheMan' Jacobsen <br>
-            5000 Odense C <br>
-            Tlf. +45 20 85 40 42 <br>
-            E-mail: jann-david77@live.dk <br>
-            <a href="#">See my ruby projects</a> <br>
-            <a href="#">linkedin</a>
-            <a href="#">instagram</a>
-            <a href="#">mail</a>
-            <a href="#">github</a>
-          </address>
-        </font>
-      </div>
-
-    <hr>
-  </div>
-</footer>
-Footer end -->
 
 
 
