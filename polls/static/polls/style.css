@@ -26,6 +26,10 @@ html. body {
   outline: none;
 }
 
+.padding {
+  padding: 10px;
+}
+
 #home {
   background: url("/static/polls/images/fo2.jpeg") no-repeat center center fixed;
   display: table;
@@ -64,6 +68,7 @@ html. body {
     padding-right:0;
     padding-left:0;
  }
+
 
 .projects-text {
   background-color: #748ba3;
@@ -133,4 +138,10 @@ a:active {
 .fa-twitter {
  background: #55ACEE;
  color: white;
+}
+
+.carousel {
+  width:800px;
+  height:800px;
+  margin: auto;
 }
