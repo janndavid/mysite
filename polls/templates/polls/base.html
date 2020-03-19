@@ -13,7 +13,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 
   {% if title %}
@@ -60,9 +60,10 @@
 <!-- Content block to be overwritten -->
 {% block content %} {% endblock %}
 
+{% block myProjects %} {% endblock %}
+
 
 <!-- Footer -->
-<footer class="temp">
 
 <div class="padding">
 
@@ -74,7 +75,7 @@
   af skærmen da bootstrap 4 kun har 12 kolonner. col-sm-6 betyder
   altså at vi viser det i 2 kolonner, og col-cs-12 er kun en kolonne -->
   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    <h4>Contact</h4>
+    <h5>Contact</h5>
     <p>
       <address>
         Jann 'JannTheMan' Jacobsen <br>
@@ -82,8 +83,8 @@
         Tlf. +45 20 85 40 42 <br>
         E-mail: jann-david77@live.dk <br>
         <a href="#">See my ruby projects</a> <br>
-        <a href="#" class="fa fa-facebook">linkedin</a>
-        <a href="#" class="fa fa-twitter">instagram</a>
+        <a href="#">linkedin</a>
+        <a href="#">instagram</a>
         <a href="#">mail</a>
         <a href="#">github</a>
       </address>
@@ -91,14 +92,14 @@
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    <h4>Built with Django</h4>
+    <h5>Built with Django</h5>
     <p>"Django is a high-level Python Web framework that encourages rapid
        development and clean, pragmatic design. Built by experienced developers,
        it takes care of much of the hassle of Web development."</p>
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-    <h4>Bootstrap 4</h4>
+    <h5>Bootstrap 4</h5>
     <p>"Build responsive, mobile-first projects on the web with the world’s
         most popular front-end component library. Bootstrap is an open source
         toolkit for developing with HTML, CSS, and JS. Quickly prototype your
@@ -111,7 +112,6 @@
 
 </div>
 
-</footer>
 <!-- Footer -->
 
 

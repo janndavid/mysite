@@ -27,9 +27,14 @@ html. body {
 .landing-text {
   display: table-cell;
   text-align: center;
-  vertical-align: middle;;
+  vertical-align: middle;
 }
 
+.project-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 
 #about {
   background: url("/static/polls/images/fo.jpg") no-repeat center center fixed;
@@ -40,8 +45,75 @@ html. body {
   background-size: cover;
 }
 
-#projects {
+#projects div {
+  padding: 14px;
+}
 
-  height: 300px;
-  opacity: 0.8;
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+ }
+
+.projects-text {
+  background-color: #748ba3;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#pibg {
+  background-color: #264d73;
+  display: table;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.btn-secondary {
+  font-size: 15px;
+  background-color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+/* Style all font awesome icons */
+.fa {
+ padding: 20px;
+ font-size: 10px;
+ width: 50px;
+ text-align: center;
+ text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+ opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
 }

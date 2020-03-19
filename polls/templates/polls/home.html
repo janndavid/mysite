@@ -1,38 +1,118 @@
 {% extends "polls/base.html" %}
 {% block content %}
 
+
+<!-- Landing section -->
 <div id="home" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
   <div class="landing-text">
 
-      <h1>Tekst</h1>
-      <h3>Mere tekst</h3>
-      <button type="button" class="btn btn-secondary">Læs mere</button>
+      <h2>Full stack developer</h2>
+      <h5>I can make it look pretty, but I love getting my hands dirty.</h5>
+      <button type="button" class="btn btn-dark">information</button>
   </div>
 
 </div>
 
-<div id="projects" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  <ul>
-    <li>Ruby on rails project</li>
-    <li>Game made with unity</li>
-    <li>Game made from own game engine</li>
-    <li>Ruby on rails project</li>
-    <li>Game made with unity</li>
-    <li>Game made from own game engine</li>
-    <li>Ruby on rails project</li>
-    <li>Game made with unity</li>
-    <li>Game made from own game engine</li>
-  </ul>
+
+<!-- Projects -->
+
+<!-- Project title and intro -->
+<div id="pibg" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+<div class="project-text">
+
+  <div class="container">
+  <h2>My Projects</h2>
+  <h5>Below I have gathered a few of my recent and more relevant
+  projects. They span over a multitude of programming languages and web
+  frameworks, but also game engines. Everything after principals of SE.
+  </h5>
+  <a href="projects">
+  <button type="button" class="btn btn-dark">see projects</button>
+
+    </a>
+  </div>
+
 </div>
+
+</div>
+
+<div class="padding">
+
+<div class="container">
+
+<div id="projects" class="row">
+
+
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h3> <a href="#">Polls app</a> </h3>
+    <p>Following the Django documentation, this was one of the first
+      apps I implemented. It offers standard functions.</p>
+      <hr>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h3> <a href="#">Blog app</a> </h3>
+    <p>A simple blog using the Django framework. I by implementing a pretty
+      layout and structure with help from Bootstrap 4.</p>
+      <hr>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h3> <a href="#">Ruby on Rails</a> </h3>
+    <p>A beautiful website developed with the Ruby on Rails framework.
+    A lot of effort was put into the interactive design.</p>
+    <hr>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h3> <a href="#">Unity Game</a> </h3>
+    <p>Having learned one web framework, I speculated about creating one
+      more. So I did! And the outcome was quite satisfying.
+    <hr>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h3> <a href="#">Game Engine</a> </h3>
+    <p>Game development has always been a dream of mine. Therefore, I
+      tried creating a little game with some custom physics scripts.
+    </p>
+    <hr>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h3> <a href="#">Inventory Tool</a> </h3>
+    <p>I was really bored when the covid-19 virus outbreak came to be. Instead
+      of laughing at people being overly hysteric, I had a bit of fun.
+    </p>
+    <hr>
+  </div>
+
+
+</div>
+
+</div>
+
+</div>
+
 
 <div id="about" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <div class="landing-text">
-
-      <h1>Hvem er jeg?</h1>
-      <h3>En eller anden dude der ikke ved hvad han skal skrive her.</h3>
-      <button type="button" class="btn btn-secondary">Læs mere</button>
+    <div class="container">
+      <h3>Who am I?</h3>
+      <p>My name is Jann Jacobsen, as previously stated, I am currently
+        a soon to be bachelor of Computer Science. However, previous to my
+        current studies, I studied Software Engineering at the University
+        of Southern Denmark, SDU if you will. This means that not only am I
+        equipped to solve problems as in Computer Science, but also able to
+        document, structure and code a project properly. I am, however, more
+        interested in game development, as I love to dwelve into a good story
+        and putting that story to life by a game generally intrigues me. </p>
+      <button type="button" class="btn btn-secondary">Read more</button>
   </div>
+</div>
 </div>
 
 {% endblock content %}
