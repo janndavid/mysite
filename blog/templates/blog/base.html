@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -17,15 +19,89 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+<!-- Custom CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+
 </head>
 
 
 <!-- Body start -->
 <body>
 
+
+  <!-- Header start -->
+  <header id="header" class="container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- Nav Logo -->
+    <a class="navbar-brand" href="#">Blog</a>
+
+    <!-- Nav Button when navbar is collapsed -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Uncollapsed Navbar -->
+    <div class="collapse navbar-collapse">
+
+      <!-- List of links in navbar -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <!-- Dropdown menu, also a list item in the navbar -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-toggle="dropdown">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Example 1</a>
+            <a class="dropdown-item" href="#">Example 2</a>
+            <a class="dropdown-item" href="#">Example 3</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Navbar Search field and button -->
+    </div>
+  </nav>
+  </header>
+
+
+
   <div class="container">
-    {% block content %} {% endblock %}
+    <div class="row">
+
+      <!-- Content block to be overwritten -->
+      <div class="col-md-8">
+        {% block blog_content %} {% endblock %}
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4">
+        <div class="sidebar">
+          <h3>Our Sidebar</h3>
+          <p>You can put any information here you'd like.
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-light">Latest Posts</li>
+              <li class="list-group-item list-group-item-light">Announcements</li>
+              <li class="list-group-item list-group-item-light">Calendars</li>
+              <li class="list-group-item list-group-item-light">etc</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

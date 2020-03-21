@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #f5ece8;
+}
+
+/* #324237 // Mørk grøn, hovedfarve
+*  #423332 // Brun
+*  #343242 // Blå-lilla
+ */
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  background-color: #324237;
+  outline: none;
+}
+
+
+.navbar-nav {
+  float: right!important;
+  outline: none;
+}
+
+.navbar-brand {
+  outline: none;
+}
+
+.navbar-default .navbar-nav li a {
+  color: red;
+  outline: none;
+}
+
+.navbar-toggler {
+  outline: none;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #423332;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar {
+  padding-top: 10px;
+}
+
+.sidebar p, li, h3 {
+  color: white;
+}
+
+.content-section {
+  background-color: #fff6f1;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
