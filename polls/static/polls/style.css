@@ -45,7 +45,52 @@ html. body {
   vertical-align: middle;
 }
 
+#project-landing {
+  background: url("/static/polls/images/fo.jpg") no-repeat center center;
+  display: table;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
 .project-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-1 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-2 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-3 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-4 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-5 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-6 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -144,4 +189,8 @@ a:active {
   width:800px;
   height:800px;
   margin: auto;
+}
+
+.card {
+  padding: 10px;
 }
