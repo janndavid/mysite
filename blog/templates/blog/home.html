@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+  {% block content %}
+  <!-- 'posts' er konteksten vi sendte med fra view-funktionen -->
+  {% for post in posts %}
+    <!-- For at trække en variabel ud af kontekst gør: {{ 'variabel' }} -->
+    <h1>{{ post.title }}</h1>
+    <p>By: {{ post.author }} on {{ post.date_posted }}</p>
+    <p>{{ post.content }}</p>
+
+  {% endfor %}
+
+{% endblock content %}
