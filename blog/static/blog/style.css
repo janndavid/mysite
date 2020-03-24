@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #f5ece8;
+  background-color: #F6F6F6;
 }
 
 /* #324237 // Mørk grøn, hovedfarve
@@ -43,7 +43,7 @@ html, body {
 
 /* Sidebar */
 .sidebar {
-  background: #423332;
+  background-color: rgba(66, 51, 50, 0.78);
   padding: 10px 20px;
   margin-bottom: 20px;
 }
@@ -51,11 +51,7 @@ html, body {
 #header a {
   color: white;
   text-decoration: none;
-}
 
-.sidebar {
-  padding-top: 10px;
-}
 
 .sidebar p, li, h3 {
   color: white;
