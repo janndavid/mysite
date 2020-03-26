@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
+    'landingpage.apps.LandingpageConfig',
     'crispy_forms',
 ]
 

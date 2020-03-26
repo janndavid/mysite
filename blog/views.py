@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Post
 
 # Dummy data:
 posts = [
@@ -31,7 +31,7 @@ def home(request):
     # Dette argument bruger vi til at sende data som html-filen kan render ud
     # fra, hvilket kan være navne, datoer osv.
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/home.html', context)
 

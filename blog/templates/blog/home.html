@@ -2,20 +2,47 @@
 
   {% block blog_content %}
   <!-- 'posts' er konteksten vi sendte med fra view-funktionen -->
-  {% for post in posts %}
 
-    <!-- Vi skal bruge title, author og selve teksten -->
-    <article class="media content-section">
-        <div class="container">
+    {% for post in posts %}
 
-          <div class="meta-data">
+    <article id="blog-post" class="container">
 
-            <a href="#"> {{ post.author }} - {{ post.date_posted }}</a>
-            </div>
+      <div class="row">
+
+        <div id="small-profile" class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+
+              <a href="#">
+                <img class="blog-picture"
+                src="/static/blog/images/placeholder.png">
+              </a>
+
+            <a href="#"> {{ post.author }} </a>
+            <p>"Maecenas nec lacus sed ante fringilla commodo vel et ipsum.
+                Vestibulum laoreet, lorem non rhoncus consequat, lacus diam
+                tempus dolor, a volutpat ante diam sed velit. Quisque vestibulum."
+            </p>
+          </div>
+
+        <!-- Content section of post-->
+        <div id="post-content" class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+          <div id="post-meta-data">
+            <small>{{ post.date_posted | date:"F d, Y" }}</small>
+          </div>
+
             <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
-
+            <p>"Maecenas nec lacus sed ante fringilla commodo vel et ipsum.
+                Vestibulum laoreet, lorem non rhoncus consequat, lacus diam
+                tempus dolor, a volutpat ante diam sed velit. Quisque vestibulum
+                lectus in nisi sollicitudin, vitae iaculis tellus aliquam. Etiam
+                nunc est, pretium in auctor eu, imperdiet quis lectus. In hack
+                Quisque vestibulum
+                lectus in nisi sollicitudin, vitae iaculis tellus aliquam. Etiam
+                nunc est, pretium in auctor eu, imperdiet quis lectus. In hack.
+                vitae iaculis tellus aliquam. a volutpat ante."</p>
         </div>
+
+      </div>
     </article>
 
   {% endfor %}

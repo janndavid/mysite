@@ -1,0 +1,65 @@
+html body {
+  height: 100%;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+h1 {
+  color: red;
+}
+
+.card {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.project1 {
+  background-color: #264d73;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.project1 li {
+  background-color: #84858a;
+}
+
+.test1 a {
+  color: white !important;
+}
+
+.test1 a:link a:hover a:active {
+  color: white !important;
+}
+
+.project2 {
+  background-color: rgba(66, 51, 50, 0.78);
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.project2 li {
+  background-color: #84858a;
+}
+
+.test2 a {
+  color: white !important;
+}
+
+.test2 a:link a:hover a:active {
+  color: white !important;
+}
+
+.project3 {
+  background-color: #FF0000;
+  border-color: magenta;
+  border-width: 2px;
+  border-style: solid;
+}
