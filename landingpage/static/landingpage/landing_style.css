@@ -1,3 +1,8 @@
+/* #324237 // Mørk grøn, hovedfarve rgb(50,66,55)
+*  #423332 // Brun rgba(66, 51, 50)
+*  #343242 // Blå-lilla rgba(52,50,66)
+ */
+
 html body {
   height: 100%;
   width: 100%;
@@ -19,11 +24,28 @@ h1 {
   max-width: 960px;
 }
 
+
+/*
+*
+*
+*/
+/* First Entry */
 .project1 {
   background-color: #264d73;
   border-color: black;
   border-width: 2px;
   border-style: solid;
+}
+
+.project1 p {
+  color: white;
+  text-align: justify;
+}
+
+.project1 h2 {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid silver;
 }
 
 .project1 li {
@@ -37,16 +59,31 @@ h1 {
 .test1 a:link a:hover a:active {
   color: white !important;
 }
-
+/*
+*
+*
+*/
+/* Second Entry */
 .project2 {
-  background-color: rgba(66, 51, 50, 0.78);
+  background-color: rgba(66, 51, 50, 0.65);
   border-color: black;
   border-width: 2px;
   border-style: solid;
 }
 
+.project2 p {
+  color: white;
+  text-align: justify;
+}
+
+.project2 h2 {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid silver;
+}
+
 .project2 li {
-  background-color: #84858a;
+  background-color: rgba(52,50,66, 0.65);
 }
 
 .test2 a {
@@ -56,10 +93,37 @@ h1 {
 .test2 a:link a:hover a:active {
   color: white !important;
 }
-
+/*
+*
+*
+*/
+/* Third Entry */
 .project3 {
-  background-color: #FF0000;
+  background-color: #ed7767;
   border-color: magenta;
   border-width: 2px;
   border-style: solid;
+}
+
+.project3 p {
+  color: white;
+  text-align: justify;
+}
+
+.project3 h2 {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid silver;
+}
+
+.project3 li {
+  background-color: #f54a6c;
+}
+
+.test3 a {
+  color: white !important;
+}
+
+.test3 a:link a:hover a:active {
+  color: white !important;
 }

@@ -23,6 +23,13 @@ html, body {
   outline: none;
 }
 
+#header a {
+  color: white;
+}
+
+#header a:link a:hover a:active {
+  color: white;
+}
 
 .navbar-nav {
   float: right!important;
