@@ -1,43 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <META charset="UTF-8" />
-    <title>
-        Some title right here!
-    </title>
-    <link rel="stylesheet" type="text/css" media="all" href="default.css" />
-  </head>
+{% load static %}
+
+<!-- LINKS -->
+<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- -->
+<!-- Skal have oversættelser på dansk, engelsk, færøsk og fransk -->
+<!-- -->
+<!-- -->
+<!-- -->
+<head>
+<title> JannTheMan's site </title>
+</head>
+
 <body>
-  <aside>
-    <a href="/" target="blank"><img src="logo.png" alt="logo"></a>
-    <nav>
-      <a href="/blog">Blog</a>
-      <a href="/portfolio">Portfolio</a>
-      <a href="/resume">Resume</a>
-      <a href="mailto:{your email}" target="blank">Email</a>
-      <a href="/links" target="blank">Links</a>
-     </nav>
-  </aside>
-<div id="content">
-  <article>
-    <header><h2>{Post Title}</h2></header>
-        <p>
-            {post text here}
-        </p>
-    <header><h2>{Another Title}</h2></header>
-        <p>
-            {most post text}
-        </p>
-  </article>
-  <article>
-    <header><h2>{A Second Article}</h2></header>
-        <p>
-            {second post text here}
-        </p>
-  </article>
+
+<!-- NAV BAR START -->
+<div class="topnav" id="myTopnav">
+  <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="#news">Projects</a>
+  <a href="#about">About</a>
 </div>
-    <footer>
-        {footer text here}
-    </footer>
-  </body>
+<!-- NAV BAR END -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- HOME PAGE START -->
+<div id="home">
+  <h1>
+    <b> Jann Jacobsen </b>
+  </h1>
+  <p id="p01">
+  Some text displaying the homepage with cool pictures consisting of<br>
+  one paragraph though it has been split up into different sections<br>
+  </p>
+  <hr>
+</div>
+<!-- HOME PAGE END -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- PROJECT PAGE START -->
+<div id="projects">
+  <h1>
+    <b> Projects </b>
+  </h1>
+  <p id="p01">
+    <ul>
+      <li>Ruby on rails project</li>
+      <li>Game made with unity</li>
+      <li>Game made from own game engine</li>
+    </ul>
+  </p>
+  <hr>
+</div>
+<!-- PROJECT PAGE END -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- ABOUT PAGE START -->
+<div id="about">
+  <h1>
+    <b> About </b>
+  </h1>
+  <p id="p01">
+    <q>Something basic about me</q> <br>
+  </p>
+  <button type="button">Click Me!</button>
+
+  <!-- Kontaktinfo: Der skal indsættes ikoner og links til sociale medier
+  og tooltips når man hover henover noget information eller et ikon -->
+  <font size="2">
+    <address>
+      Jann 'JannTheMan' Jacobsen <br>
+      5000 Odense C <br>
+      Tlf. +45 20 85 40 42 <br>
+      E-mail: jann-david77@live.dk <br>
+      <a href="#">See my ruby projects</a> <br>
+      <a href="#">linkedin</a>
+      <a href="#">instagram</a>
+      <a href="#">mail</a>
+      <a href="#">github</a>
+    </address>
+  </font>
+</div>
+<!-- ABOUT PAGE END -->
+<!-- -->
+<!-- -->
+<!-- -->
+</body>
 </html>

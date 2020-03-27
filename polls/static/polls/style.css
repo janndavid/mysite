@@ -1,0 +1,196 @@
+html. body {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #264d73;
+  outline: none;
+}
+
+.navbar-nav {
+  float: right!important;
+  outline: none;
+}
+
+.navbar-brand {
+  outline: none;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #D5D5D5;
+  outline: none;
+}
+
+.navbar-toggler {
+  outline: none;
+}
+
+.padding {
+  padding: 10px;
+}
+
+#home {
+  background: url("/static/polls/images/fo2.jpeg") no-repeat center center fixed;
+  display: table;
+  height: 750px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.landing-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#project-landing {
+  background: url("/static/polls/images/fo.jpg") no-repeat center center;
+  display: table;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.project-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-1 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-2 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-3 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-4 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-5 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.project-6 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#about {
+  background: url("/static/polls/images/fo.jpg") no-repeat center center fixed;
+  display: table;
+  height: 750px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+#projects div {
+  padding: 14px;
+}
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+ }
+
+
+.projects-text {
+  background-color: #748ba3;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#pibg {
+  background-color: #aaadb3;
+  display: table;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.btn-secondary {
+  font-size: 15px;
+  background-color: black;
+  outline: none;
+}
+
+.btn {
+  outline: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:link {
+  color: black;
+  outline: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+/* Style all font awesome icons */
+.fa {
+ padding: 20px;
+ font-size: 10px;
+ width: 50px;
+ text-align: center;
+ text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+ opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+}
+
+.carousel {
+  width:800px;
+  height:800px;
+  margin: auto;
+}
+
+.card {
+  padding: 10px;
+}

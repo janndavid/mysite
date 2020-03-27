@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+
+/* #324237 // Mørk grøn, hovedfarve
+*  #423332 // Brun
+*  #343242 // Blå-lilla
+ */
+
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar {
+  background-color: #324237;
+  outline: none;
+}
+
+#header a {
+  color: white;
+}
+
+#header a:link a:hover a:active {
+  color: white;
+}
+
+.navbar-nav {
+  float: right!important;
+  outline: none;
+}
+
+.navbar-brand {
+  outline: none;
+}
+
+.navbar-default .navbar-nav li a {
+  color: red;
+  outline: none;
+}
+
+.navbar-toggler {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+/*Sidebar
+.sidebar {
+  background-color: rgba(66, 51, 50, 0.78);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+
+
+.sidebar p, li, h3 {
+  color: white;
+}
+
+
+
+/*
+.content-section {
+  background-color: #423332 !important;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+*/
+
+#blog-post {
+  width: 100%;
+  border-bottom: 20px solid #343242;
+  border-right: 20px solid #343242;
+  border-top: 1px solid #343242;
+  background-color: white;
+  margin: 20px 10px 20px 10px;
+}
+
+.blog-picture {
+  background-color: rgba(66, 51, 50, 0.78);
+  width: 60%;
+}
+
+#small-profile {
+  background-color: rgba(66, 51, 50, 0.78) !important;
+}
+
+#small-profile p {
+  font-size: 11px;
+}
+
+#post-content {
+  padding: 5px;
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+#post-content p {
+  font-size: auto;
+}
+
+#post-content h2 {
+  text-align: left;
+  font-size: 25px;
+  padding: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#post-content small {
+  text-align: left;
+  font-size: 9px;
+  padding: 0px;
+}
+
+#post-meta-data {
+  border-color: blue;
+}

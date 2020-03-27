@@ -1,0 +1,255 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Portfolio landing page</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'landingpage/landing_style.css' %}">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div id="landing-intro" class="container">
+      <h1>This is my, Jann Jacobsen's, website!</h1>
+      <p>Below you will see three articles which are my projects.
+      This website acts as my portfolio, but is not an ordinary portfolio.
+      Firstly, the most above article shows my actual portfolio site, which
+      is a one-pager in this very django powered website. Secondly, the next
+      article is also a part of my portfolio, but I have kept it seperate
+      for the sake of readability. It is basically the Django Apps I have
+      developed, to show that I am capable of developing with Django.
+      Third and lastly, you will see my Ruby on Rails website. There I breifly
+      explain the RoR site, and I have included it here due to the fact, that
+      I want this page to act as a complete overview over me, and my projects.</p>
+      <a href="#" class="btn btn-success" style="max-width: 100%;">
+        Django source code:
+      </a>
+      <hr>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+
+    <!-- Portfolio -->
+    <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <div class="card project1">
+
+        <a href="/polls">
+          <img class="card-img-top img-fluid" style="max-width: 100%; height: auto;
+          " src="/static/landingpage/images/pro1.png"
+          alt="Card image cap">
+        </a>
+
+        <div class="card-body">
+
+          <h2 class="card-title">My Portfolio</h2>
+          <p class="card-text">
+          A short one page portfolio, I neither go too much in detail
+          nor do I skip over on key points. You will first encounter a small
+          landing page with my self-proclaimed title and slogan. This is
+          followed by the projects I want to highlight the most.You will find
+          a short description afterwards with the option to read more
+          about me. And lastly, there will be contact information and the
+          tools I want to credit, for having helped me creating this site.
+          I won't bother with more text, but press the button to read more.</p>
+          <a href="#" class="btn btn-dark">Do you want to know more?</a>
+
+        </div>
+
+        <ul class="test1 list-group list-group-flush">
+          <li class="list-group-item">
+
+
+              <a class="mybutton" href="#" data-toggle="collapse" role="button"
+              aria-expanded="false" aria-controls="collapseImages"
+              data-target="#collapseImages">
+              View the pictures</a>
+
+              <div class="collapse" id="collapseImages">
+                Some random text
+              </div>
+
+
+          </li>
+          <li class="list-group-item">
+            <a href="#">Check out my linkedin</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#">I'm also on instagram</a>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-dark" style="max-width: 100%;">
+          Take me to the portfolio!
+        </a>
+      </div>
+
+    </article>
+
+
+    <!-- Django Apps -->
+    <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <div class="card project2">
+
+        <a href="/blog">
+          <img class="card-img-top img-fluid" style="max-width: 100%; height: auto;
+          " src="/static/landingpage/images/projektpic.png"
+          alt="Card image cap">
+        </a>
+
+        <div class="card-body">
+
+          <h2 class="card-title">Django Apps</h2>
+          <p class="card-text">
+            These are the Djano Apps I have developed. This article links to
+            a page containing the following apps: a blog, x and y. The blog
+            is very much straight forward. Therefore, I have tried my best
+            to implement functions and styling to both increase the difficulty,
+            but also to show that I can navigate through most of the basics
+            that Django has to offer, while also making the pages responsive
+            and comfortable to look at.
+          </p>
+          <a href="#" class="btn btn-success">Do you want to know more?</a>
+
+
+        </div>
+
+        <ul class="test2 list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="#">Blog App</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#">X App</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#">Y App</a>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-success" style="max-width: 100%;">
+          Take me to the apps!
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!--Card containing small desc. and link to my RoR site-->
+    <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <div class="card project3">
+
+        <a href="#">
+          <img class="card-img-top img-fluid" style="max-width: 100%; height: auto;
+          " src="/static/landingpage/images/pro3.jpeg"
+          alt="Card image cap">
+        </a>
+        <div class="card-body">
+
+          <h2 class="card-title">RoR Online Application</h2>
+          <p class="card-text">A secondary website of mine of which I have
+          used to illustrate my capability of using the Ruby on Rails
+          Framework on pair with Django. In addition, I spent a lot more
+          energy on styling this website than my Django one, but on the
+          expense of the backend. A neccesary tradeof regarding my time.</p>
+          <a href="#" class="btn btn-danger">Do you want to know more?</a>
+
+        </div>
+
+        <ul class="test3 list-group list-group-flush">
+          <li class="list-group-item">
+
+
+            <a class="mybutton" href="#" data-toggle="collapse"
+            role="button" aria-expanded="false" aria-controls="collapseExample"
+            data-target="#collapseExample"
+
+            >Why?</a>
+
+
+            <div class="collapse" id="collapseExample">
+              <div>
+                I'll tell you why. Despite the fact that a lot of developers
+                persistently claim that Ruby on Rails is either dead or dying,
+                <a href="#">are wrong</a>. A large part of the internet is
+                to this day built on RoR, and it is therefore hugely relevant.
+                The other side to the story, is my love for interpreted
+                languages, such as <a href="#">Ruby</a> and <a href="#">Lua</a>.
+                Naturally, since Lua does not provide a sufficient web framwork,
+                here we are!
+              </div>
+            </div>
+
+
+          </li>
+          <li class="list-group-item">
+
+            <a class="mybutton" href="#" data-toggle="collapse"
+            role="button" aria-expanded="false" aria-controls="collapsePictures"
+            data-target="#collapsePictures"
+
+            >View the pictures</a>
+
+
+            <div class="collapse" id="collapsePictures">
+              <div>
+                I'll tell you why
+              </div>
+            </div>
+
+          </li>
+          <li class="list-group-item">
+            <a href="#">Github source code</a>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-danger" style="max-width: 100%;">
+          Take me to the Ruby on Rails website!
+        </a>
+
+      </div>
+
+    </article>
+
+    </div>
+
+  </div>
+
+  </main>
+
+  <footer></footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

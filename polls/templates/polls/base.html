@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<!-- Head start -->
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+  {% if title %}
+    <title> {{ title }} </title>
+  {% else %}
+    <title> JannTheMan's site </title>
+  {% endif %}
+</head>
+
+
+
+<!-- Body start -->
+<body>
+
+  <!-- Nav start -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home">JannTheMan</a>
+        </div>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Head start -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects">Projects</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about">About</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+<!-- Content block to be overwritten -->
+{% block content %} {% endblock %}
+{% block myProjects %} {% endblock %}
+
+
+
+<!-- Footer -->
+<div class="padding">
+<div class="container">
+<div class="row">
+
+  <!-- ved col-lg-3 betyder det at vi viser indhold på 12/3=4 kolonner
+  af skærmen da bootstrap 4 kun har 12 kolonner. col-sm-6 betyder
+  altså at vi viser det i 2 kolonner, og col-cs-12 er kun en kolonne -->
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h5>Contact</h5>
+    <p>
+      <address>
+        Jann 'JannTheMan' Jacobsen <br>
+        5000 Odense C <br>
+        Tlf. +45 20 85 40 42 <br>
+        E-mail: jann-david77@live.dk <br>
+        <a href="#">See my ruby projects</a> <br>
+        <a href="#">linkedin</a>
+        <a href="#">instagram</a>
+        <a href="#">mail</a>
+        <a href="#">github</a>
+      </address>
+    </p>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h5>Built with Django</h5>
+    <p>"Django is a high-level Python Web framework that encourages rapid
+       development and clean, pragmatic design. Built by experienced developers,
+       it takes care of much of the hassle of Web development."</p>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <h5>Bootstrap 4</h5>
+    <p>"Build responsive, mobile-first projects on the web with the world’s
+        most popular front-end component library. Bootstrap is an open source
+        toolkit for developing with HTML, CSS, and JS. Quickly prototype your
+        ideas or build"</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{% extends "polls/base.html" %}
+{% block content %}
+
+
+<!-- Landing page -->
+<div id="home" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="landing-text">
+      <h2>Full stack developer</h2>
+      <h5>I can make it look pretty, but I love getting my hands dirty.</h5>
+      <button type="button" class="btn btn-dark">information</button>
+  </div>
+</div>
+
+
+
+<!-- Project title and intro -->
+<div id="pibg" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="project-text">
+    <div class="container">
+    <h2>My Projects</h2>
+    <h5>Below I have gathered a few of my recent and more relevant
+    projects. They span over a multitude of programming languages and web
+    frameworks, but also game engines. Everything after principals of SE.</h5>
+    <a href="projects">
+      <button type="button" class="btn btn-dark">see projects</button>
+    </a>
+    </div>
+  </div>
+</div>
+
+<!-- Project Boxes to be replaced by bootstrap 4 cards -->
+<div class="container">
+  <div id="projects" class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h3> <a href="projects">Polls app</a> </h3>
+      <p>Following the Django documentation, this was one of the first
+        apps I implemented. It offers standard functions.</p>
+        <hr>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h3> <a href="projects">Blog app</a> </h3>
+      <p>A simple blog using the Django framework. I by implementing a pretty
+        layout and structure with help from Bootstrap 4.</p>
+        <hr>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h3> <a href="projects">Ruby on Rails</a> </h3>
+      <p>A beautiful website developed with the Ruby on Rails framework.
+      A lot of effort was put into the interactive design.</p>
+      <hr>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h3> <a href="projects">Unity Game</a> </h3>
+      <p>Having learned one web framework, I speculated about creating one
+        more. So I did! And the outcome was quite satisfying.
+      <hr>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h3> <a href="projects">Game Engine</a> </h3>
+      <p>Game development has always been a dream of mine. Therefore, I
+        tried creating a little game with some custom physics scripts.
+      </p>
+      <hr>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h3> <a href="projects">Inventory Tool</a> </h3>
+      <p>I was really bored when the covid-19 virus outbreak came to be. Instead
+        of laughing at people being overly hysteric, I had a bit of fun.
+      </p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- Text about me -->
+<div id="about" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="project-text">
+    <div class="container">
+      <h3>Who am I?</h3>
+      <p>My name is Jann Jacobsen I am a 24 year old student from Denmark
+        with Faroese roots. I like to play video games, specifically counter
+        strike. Other than my interest for gaming, I have always been interested
+        in computers, and how they work. And as previously stated, I am currently
+        a soon to be bachelor of Computer Science. However, previous to my
+        current studies, I studied Software Engineering at the University
+        of Southern Denmark, SDU if you will. This means that not only am I
+        equipped to solve problems as in Computer Science, but also able to
+        document, structure and code a project properly. I am, however, more
+        interested in game development, as I love to dwelve into a good story
+        and putting that story to life by a game generally intrigues me. If you
+        want to know more about me or my competences, press click the button
+        below, or check out my projects.</p>
+      <a href="about">
+        <button type="button" class="btn btn-secondary">Read more</button>
+      </a>
+  </div>
+</div>
+</div>
+
+{% endblock content %}
