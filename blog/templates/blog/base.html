@@ -30,47 +30,37 @@
 
 
   <!-- Header start -->
-  <header id="header" class="container">
+  <header id="header">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
 
     <!-- Nav Logo -->
-    <a class="navbar-brand" href="#">Blog</a>
+    <a class="navbar-brand" href="/blog">Blog</a>
 
     <!-- Nav Button when navbar is collapsed -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarCollapse" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Uncollapsed Navbar -->
-    <div class="collapse navbar-collapse">
 
+      <!-- Uncollapsed Navbar -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
       <!-- List of links in navbar -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="{% url 'blog-home' %}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'login' %}">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'register' %}">Register</a>
-        </li>
-
-        <!-- Dropdown menu, also a list item in the navbar -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-          role="button" data-toggle="dropdown">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Example 1</a>
-            <a class="dropdown-item" href="#">Example 2</a>
-            <a class="dropdown-item" href="#">Example 3</a>
-          </div>
-        </li>
-      </ul>
-      <!-- Navbar Search field and button -->
+        {% if user.is_authenticated %}
+          <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+          </ul>
+        {% else %}
+          <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="{% url 'login' %}">Login</a>
+            <a class="nav-link" href="{% url 'register' %}">Register</a>
+          </ul>
+        {% endif %}
     </div>
+
   </nav>
   </header>
 

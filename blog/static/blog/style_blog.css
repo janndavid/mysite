@@ -49,40 +49,30 @@ html, body {
   outline: none;
 }
 
-
-
-
-
-
-
-
-/*Sidebar
-.sidebar {
-  background-color: rgba(66, 51, 50, 0.78);
-  padding: 10px 20px;
-  margin-bottom: 20px;
-}
-
-#header a {
-  color: white;
-  text-decoration: none;
-
-
-.sidebar p, li, h3 {
-  color: white;
+#right-navbar {
+  float: right;
 }
 
 
-
-/*
 .content-section {
-  background-color: #423332 !important;
+  background-color: white !important;
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-*/
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
 
 #blog-post {
   width: 100%;
