@@ -50,6 +50,7 @@
       <!-- List of links in navbar -->
         {% if user.is_authenticated %}
           <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="{% url 'post-create' %}">New Post</a>
             <a class="nav-link" href="{% url 'profile' %}">Profile</a>
             <a class="nav-link" href="{% url 'logout' %}">Logout</a>
           </ul>

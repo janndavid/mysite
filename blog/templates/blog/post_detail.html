@@ -1,0 +1,52 @@
+{% extends "blog/base.html" %}
+
+{% block blog_content %}
+<article id="blog-post" class="container">
+
+  <div class="row">
+
+    <div id="small-profile" class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+
+          <a href="#">
+            <img class="blog-picture"
+            src="{{ object.author.profile.image.url }}">
+          </a>
+
+        <a href="#"> {{ object.author }} </a>
+        <p>"Maecenas nec lacus sed ante fringilla commodo vel et ipsum.
+            Vestibulum laoreet, lorem non rhoncus consequat, lacus diam
+            tempus dolor, a volutpat ante diam sed velit. Quisque vestibulum."
+        </p>
+      </div>
+
+    <!-- Content section of post-->
+    <div id="post-content" class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+      <div id="post-meta-data">
+        <small>{{ object.date_posted | date:"F d, Y" }}</small>
+        {% if object.author == user %}
+          <a class="btn btn-secondary btn-sm mt-1 mb-1"
+          href="{% url 'post-update' object.id %}">Update</a>
+
+          <a class="btn btn-danger btn-sm mt-1 mb-1"
+          href="{% url 'post-update' object.id %}">Delete</a>
+        {% endif %}
+
+      </div>
+
+        <h2><a href="{% url 'post-detail' post.id %}">{{ object.title }}</a></h2>
+        <p>"Maecenas nec lacus sed ante fringilla commodo vel et ipsum.
+            Vestibulum laoreet, lorem non rhoncus consequat, lacus diam
+            tempus dolor, a volutpat ante diam sed velit. Quisque vestibulum
+            lectus in nisi sollicitudin, vitae iaculis tellus aliquam. Etiam
+            nunc est, pretium in auctor eu, imperdiet quis lectus. In hack
+            Quisque vestibulum
+            lectus in nisi sollicitudin, vitae iaculis tellus aliquam. Etiam
+            nunc est, pretium in auctor eu, imperdiet quis lectus. In hack.
+            vitae iaculis tellus aliquam. a volutpat ante."</p>
+    </div>
+
+  </div>
+</article>
+
+{% endblock blog_content %}
